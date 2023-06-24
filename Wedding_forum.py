@@ -6,4 +6,7 @@ def weddingRecom():
         return df
     df = pd.read_csv('Approved_Venues_for_Civil_Ceremonies_in_Causeway_Coast_and_Glens.csv')
     df = preprocess_data(df)
+    town = input("Enter the town for the wedding venue: ")
+    civil_status = input("Is civil marriage required? (Yes/No): ")
+    civil_status1 = input("Is civil partnership required? (Yes/No): ")
     

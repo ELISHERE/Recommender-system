@@ -31,4 +31,14 @@ def weddingRecom():
     town = input("Enter the town for the wedding venue: ")
     civil_status = input("Is civil marriage required? (Yes/No): ")
     civil_status1 = input("Is civil partnership required? (Yes/No): ")
+    recommendations = recommend_wedding_venues(df, town, civil_status, civil_status1)
+    if recommendations == []:
+        print()
+    elif isinstance(recommendations, str):
+        print(recommendations)
+    else:
+        print("Recommended Wedding Venues:")
+        for recommended_venues in recommendations:
+            print(recommended_venues)
+            print()
     

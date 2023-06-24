@@ -15,3 +15,5 @@ def rentRecom():
     user_price = int(input("Enter the price you want:"))
     user_size = int(input("Enter the size you want"))
     user_city = input("Enter Your City:")
+    recommendations = get_recommendations(user_price, user_size, user_city)
+    print(recommendations)

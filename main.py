@@ -4,6 +4,7 @@ from Sports_field import sportRecom
 from hotel import hotelRecom
 from car import carsRecom
 from houseRent import rentRecom
+from land import landsRecom
 while(True):
     print("1.Wedding forum recommendation system")
     print("2.Commercial real state recommendation system")
@@ -11,6 +12,7 @@ while(True):
     print("4.Hotel recommendation system")
     print("5.Car recommendation system")
     print("6.House renting recommendation system")
+    print("7.Land recommendation system")
     print("0.Exit")
     menu = int(input("Enter the menu number:"))
     if menu == 1:
@@ -25,5 +27,7 @@ while(True):
         carsRecom()
     elif menu == 6:
         rentRecom()
+    elif menu == 7:
+        landsRecom()
     elif menu == 0:
         break
